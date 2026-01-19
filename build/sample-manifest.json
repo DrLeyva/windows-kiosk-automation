@@ -1,0 +1,12 @@
+﻿{
+    "freeDiskGB":  55.98,
+    "osName":  "Microsoft Windows 11 Pro",
+    "architecture":  "64-bit",
+    "buildStatus":  "SUCCESS",
+    "hostname":  "BD-KIOSK-01",
+    "buildId":  "build-20260119-133033",
+    "buildTimestamp":  "2026-01-19T13:30:33.5300250-08:00",
+    "osVersion":  "10.0.26200",
+    "totalMemoryGB":  7.98,
+    "diskSizeGB":  79.07
+}
