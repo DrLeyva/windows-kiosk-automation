@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  windows-ci:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run CI tests (PowerShell)
+        shell: pwsh
+        run: |
+          pwsh -NoProfile -ExecutionPolicy Bypass -File tests/ci-tests.ps1
+
+      - name: Upload sample artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sample-build-artifacts
+          path: |
+            build/sample-manifest.json
