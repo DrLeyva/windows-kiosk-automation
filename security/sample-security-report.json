@@ -1,0 +1,32 @@
+{
+  "reportId": "sec-20260120-120036",
+  "status": "FAIL",
+  "timestamp": "2026-01-20T12:00:36.5762234-06:00",
+  "results": [
+    {
+      "checkId": "FW-001",
+      "title": "Windows Firewall enabled (all profiles)",
+      "passed": true,
+      "details": "All profiles enabled"
+    },
+    {
+      "checkId": "RDP-001",
+      "title": "Remote Desktop disabled",
+      "passed": true,
+      "details": "RDP connections denied (fDenyTSConnections=1)"
+    },
+    {
+      "checkId": "UAC-001",
+      "title": "User Account Control enabled",
+      "passed": true,
+      "details": "EnableLUA=1"
+    },
+    {
+      "checkId": "SMB-001",
+      "title": "SMBv1 disabled",
+      "passed": false,
+      "details": "The requested operation requires elevation.\r\n"
+    }
+  ],
+  "failures": 1
+}
